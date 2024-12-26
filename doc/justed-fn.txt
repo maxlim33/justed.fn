@@ -1,0 +1,18 @@
+                                                                   *justed.fn*
+
+MIT License Copyright (c) 2024 Max Lim
+
+==============================================================================
+
+Features:
+- Display filename at the top right corner of each window.
+
+Setup:
+>
+    require('justed.fn').setup({ show_modifier = true })
+    local fn = require('justed.fn')
+    vim.keymap.set('n', '<C-G>', function() vim.cmd('file') fn.toggle_fn() end)
+    vim.keymap.set('t', '<C-G>', function() vim.cmd('file') fn.toggle_fn() end)
+<
+
+ vim:tw=78:ts=8:et:ft=help:norl:
